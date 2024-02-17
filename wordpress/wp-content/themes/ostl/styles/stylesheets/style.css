@@ -1,0 +1,1980 @@
+@charset 'UTF-8';
+/* Theme Name: ØS Theme URI: http://www.olivierstell.fr/ Description: The first theme created by Francis Chouquet. Version: 0.1 Author: Olivier STELL   ØS Theme by Olivier STELL || http://www.olivierstell.fr   */
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    /* 1 */
+    display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+    display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+    background-color: transparent;
+    /* 1 */
+    -webkit-text-decoration-skip: objects;
+    /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    border-bottom: none;
+    /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+    font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+    color: #000;
+    background-color: #ff0;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+sup {
+    top: -.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+    border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+    /* 1 */
+    overflow: visible;
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+    font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+    /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+    border: 1px solid #c0c0c0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+    /* 2 */
+    display: table;
+    box-sizing: border-box;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+    color: inherit;
+    /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type='checkbox'],
+[type='radio'] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+    /* 1 */
+    outline-offset: -2px;
+    -webkit-appearance: textfield;
+    /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+    opacity: .54;
+    color: inherit;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+    /* 1 */
+    font: inherit;
+    -webkit-appearance: button;
+    /* 2 */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-size: calc(1em * .625);
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+h1,
+.h1-like {
+    font-size: 5.6rem;
+    font-weight: 800;
+    line-height: 1.0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000;
+}
+
+h2,
+.h2-like {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.0;
+    margin: 0 0 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000;
+}
+
+h2 .thin,
+.h2-like .thin {
+    margin-right: -5px;
+}
+
+h3,
+.h3-like {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.thin {
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal; 
+
+    src: url('../../_font/icomoon.eot?m936a9');
+    src: url('../../_font/icomoon.eot?m936a9#iefix') format('embedded-opentype'), url('../../_font/icomoon.ttf?m936a9') format('truetype'), url('../../_font/icomoon.woff?m936a9') format('woff'), url('../../_font/icomoon.svg?m936a9#icomoon') format('svg');
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: '\e908';
+}
+
+.icon-contact:before {
+    content: '\e900';
+}
+
+.icon-infos:before {
+    content: '\e901';
+}
+
+.icon-ext-big:before {
+    content: '\e902';
+}
+
+.icon-ext-big-a:after {
+    content: '\e902';
+}
+
+.icon-ext:before {
+    content: '\e903';
+}
+
+.icon-ext-a:after {
+    content: '\e903';
+}
+
+.icon-back:before {
+    content: '\e904';
+}
+
+.icon-left:before {
+    content: '\e905';
+}
+
+.icon-ostell:before {
+    content: '\e906';
+}
+
+.icon-right:before {
+    content: '\e907';
+}
+
+.icon-right-a:after {
+    content: '\e907';
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-mid {
+    text-align: center;
+}
+
+.text-link {
+    color: #000;
+    border-bottom: 1px dotted #000;
+}
+
+.text-link:hover,
+.text-link:active,
+.text-link:focus {
+    border-bottom: 1px solid;
+}
+
+.bg-gradient {
+    background: -webkit-linear-gradient(top, #fafafa, #ededed);
+    background: linear-gradient(180deg, #fafafa, #ededed);
+}
+
+.transition {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.real-bg-gradient,
+.real-infos {
+    background: -webkit-linear-gradient(bottom, #f7f9fc, #fff);
+    background: linear-gradient(0deg, #f7f9fc, #fff);
+}
+
+.outbox {
+    margin: 20px;
+}
+
+.inbox {
+    padding: 60px;
+}
+
+.tags {
+    font-size: 1.8rem;
+    letter-spacing: -.8px;
+}
+
+.tags b {
+    font-weight: 300;
+    margin-right: 1rem;
+}
+
+.surligne {
+    background-color: #ffe000;
+}
+
+.btn {
+    display: inline-block;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    border: 0;
+}
+
+.btn-dark {
+    color: #ffe000;
+    background: #000;
+}
+
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:focus {
+    background: #333;
+}
+
+/* ---------------------------------- */
+/* ==Helpers                          */
+/* ---------------------------------- */
+/* State Helpers */
+/* ------------- */
+/* invisible for all */
+.is-hidden,
+[hidden] {
+    display: none;
+}
+
+/* hidden but not for an assistive technology like a screen reader, Yahoo! method */
+.visually-hidden {
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.is-disabled,
+[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .5;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+ul.is-unstyled,
+ul.unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Width Helpers */
+/* ------------- */
+/* blocks widths (percentage and pixels) */
+.w10 {
+    width: 10%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w33 {
+    width: 33.3333%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w66 {
+    width: 66.6666%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50p {
+    width: 50px;
+}
+
+.w100p {
+    width: 100px;
+}
+
+.w150p {
+    width: 150px;
+}
+
+.w200p {
+    width: 200px;
+}
+
+.w300p {
+    width: 300px;
+}
+
+@media (min-width: 401px) {
+    .w400p {
+        width: 400px;
+    }
+
+    .w500p {
+        width: 500px;
+    }
+
+    .w600p {
+        width: 600px;
+    }
+}
+
+@media (min-width: 701px) {
+    .w700p {
+        width: 700px;
+    }
+
+    .w800p {
+        width: 800px;
+    }
+}
+
+@media (min-width: 961px) {
+    .w960p {
+        width: 960px;
+    }
+
+    .mw960p {
+        max-width: 960px;
+    }
+
+    .w1140p {
+        width: 1140px;
+    }
+
+    .mw1140p {
+        max-width: 1140px;
+    }
+}
+
+.wauto {
+    width: auto;
+}
+
+/* Spacing Helpers */
+/* --------------- */
+.man,
+.ma0 {
+    margin: 0;
+}
+
+.pan,
+.pa0 {
+    padding: 0;
+}
+
+.mas {
+    margin: 1rem;
+}
+
+.mam {
+    margin: 2rem;
+}
+
+.mal {
+    margin: 4rem;
+}
+
+.maxl {
+    margin: 6rem;
+}
+
+.pas {
+    padding: 1rem;
+}
+
+.pam {
+    padding: 2rem;
+}
+
+.pal {
+    padding: 4rem;
+}
+
+.paxl {
+    padding: 6rem;
+}
+
+.mtn,
+.mt0 {
+    margin-top: 0;
+}
+
+.mts {
+    margin-top: 1rem;
+}
+
+.mtm {
+    margin-top: 2rem;
+}
+
+.mtl {
+    margin-top: 4rem;
+}
+
+.mtxl {
+    margin-top: 6rem;
+}
+
+.mrn,
+.mr0 {
+    margin-right: 0;
+}
+
+.mrs {
+    margin-right: 1rem;
+}
+
+.mrm {
+    margin-right: 2rem;
+}
+
+.mrl {
+    margin-right: 4rem;
+}
+
+.mrxl {
+    margin-right: 6rem;
+}
+
+.mbn,
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mbs {
+    margin-bottom: 1rem;
+}
+
+.mbm {
+    margin-bottom: 2rem;
+}
+
+.mbl {
+    margin-bottom: 4rem;
+}
+
+.mbxl {
+    margin-bottom: 6rem;
+}
+
+.mln,
+.ml0 {
+    margin-left: 0;
+}
+
+.mls {
+    margin-left: 1rem;
+}
+
+.mlm {
+    margin-left: 2rem;
+}
+
+.mll {
+    margin-left: 4rem;
+}
+
+.mlxl {
+    margin-left: 6rem;
+}
+
+.mauto {
+    margin: auto;
+}
+
+.mtauto {
+    margin-top: auto;
+}
+
+.mrauto {
+    margin-right: auto;
+}
+
+.mbauto {
+    margin-bottom: auto;
+}
+
+.mlauto {
+    margin-left: auto;
+}
+
+.ptn,
+.pt0 {
+    padding-top: 0;
+}
+
+.pts {
+    padding-top: 1rem;
+}
+
+.ptm {
+    padding-top: 2rem;
+}
+
+.ptl {
+    padding-top: 4rem;
+}
+
+.ptxl {
+    padding-top: 6rem;
+}
+
+.prn,
+.pr0 {
+    padding-right: 0;
+}
+
+.prs {
+    padding-right: 1rem;
+}
+
+.prm {
+    padding-right: 2rem;
+}
+
+.prl {
+    padding-right: 4rem;
+}
+
+.prxl {
+    padding-right: 6rem;
+}
+
+.pbn,
+.pb0 {
+    padding-bottom: 0;
+}
+
+.pbs {
+    padding-bottom: 1rem;
+}
+
+.pbm {
+    padding-bottom: 2rem;
+}
+
+.pbl {
+    padding-bottom: 4rem;
+}
+
+.pbxl {
+    padding-bottom: 6rem;
+}
+
+.pln,
+.pl0 {
+    padding-left: 0;
+}
+
+.pls {
+    padding-left: 1rem;
+}
+
+.plm {
+    padding-left: 2rem;
+}
+
+.pll {
+    padding-left: 4rem;
+}
+
+.plxl {
+    padding-left: 6rem;
+}
+
+body {
+    overflow-x: hidden;
+    color: #000;
+    background-color: #fff;
+}
+
+.nav-menu {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: -24rem;
+    width: 240px;
+    height: 100%;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    background-color: #fff;
+}
+
+.nav-menu .header-logo {
+    display: block;
+    width: auto;
+    height: 50px;
+    margin: 4rem auto;
+    fill: #fff;
+}
+
+.nav-menu .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.nav-menu .nav-links a {
+    font-weight: 300;
+    line-height: 50px;
+    display: block;
+    margin: 1rem 0;
+    padding: 0 2rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav-menu .nav-links a:hover,
+.nav-menu .nav-links a:active {
+    text-decoration: line-through;
+    color: #ffe000;
+}
+
+[class^='nav-button'] {
+    font-size: 3.2rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 24rem;
+    display: inline-block;
+    margin: 0;
+    padding: 1rem;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    border: 0;
+    background-color: #ffe000;
+}
+
+[class^='nav-button']:hover,
+[class^='nav-button']:focus,
+[class^='nav-button']:active {
+    color: #737373;
+}
+
+.wrapper {
+    position: relative;
+    left: 0;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+}
+
+.js-enabled .nav-button-close {
+    display: none;
+}
+
+#menu:target + div.wrapper,
+#menu:target {
+    -webkit-transform: translateX(24rem);
+    transform: translateX(24rem);
+}
+
+#menu:target {
+    background-color: #000;
+}
+
+.nav-button-close,
+#menu:target .nav-button-open {
+    display: none;
+}
+
+.nav-button-open,
+#menu:target .nav-button-close {
+    display: inline-block;
+}
+
+.home-about {
+    min-height: 100vh;
+    padding: 180px 60px 180px;
+    color: #000;
+    background-color: #fff;
+}
+
+.home-about h1 {
+    display: block;
+    height: 112px;
+    margin: 0 0 50px;
+    text-indent: -9999px;
+    background: url(../../img/logo.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.home-about p {
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.home-about .text-link {
+    background-color: #ffe000;
+}
+
+.home-portfolio {
+    padding: 8rem 6rem;
+    background-color: #000;
+}
+
+.home-portfolio header p,
+.home-portfolio header h1 {
+    color: #ffe000;
+}
+
+.home-portfolio header p {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
+}
+
+.list-real {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.list-real figure {
+    margin: 0;
+}
+
+.list-real .real-bloc {
+    position: relative;
+    overflow: hidden;
+    width: 33%;
+    max-width: 44rem;
+    height: auto;
+    border: 6px solid #000;
+    background-color: #ffe000;
+}
+
+.list-real .real-bloc .img-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .35s;
+    transition: -webkit-transform .35s;
+    transition: transform .35s;
+    transition: transform .35s, -webkit-transform .35s;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.list-real .real-bloc .img-container img {
+    max-width: 100%;
+    opacity: 1;
+}
+
+.list-real .real-bloc .img-container:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    -webkit-transition: opacity .35s;
+    transition: opacity .35s;
+    opacity: 0;
+    background: #000;
+}
+
+.list-real .real-bloc .tags {
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.list-real .real-bloc:hover .img-container {
+    -webkit-transform: scale3d(.95, .95, 1);
+    transform: scale3d(.95, .95, 1);
+}
+
+.list-real .real-bloc:hover .img-container:after {
+    opacity: .75;
+}
+
+.list-real .real-bloc:hover figcaption {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    opacity: 1;
+}
+
+.list-real figcaption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    -webkit-transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    transition: opacity .35s, transform .35s, -webkit-transform .35s;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    opacity: 0;
+    -ms-hyphens: auto;
+}
+
+.list-real figcaption h2,
+.list-real figcaption p,
+.list-real figcaption a {
+    color: #ffe000;
+}
+
+.list-real figcaption h2 {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.list-real figcaption a {
+    border-color: #fff;
+}
+
+.real-head {
+    font-size: 3.2rem;
+    position: relative;
+    z-index: 10;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+
+.real-nav {
+    position: relative;
+    overflow: hidden;
+    height: 65px;
+    margin: 2rem 6rem 2rem;
+}
+
+.real-nav a {
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.real-nav a:hover div {
+    -webkit-transform: translateY(-50%) translateX(0);
+    transform: translateY(-50%) translateX(0);
+}
+
+.real-nav h3 {
+    margin: 0;
+}
+
+.real-nav .real-nav-icon {
+    font-size: 3.4rem;
+    position: relative;
+    z-index: 50;
+    display: block;
+    padding: 1rem;
+    -webkit-transition: padding .3s;
+    transition: padding .3s;
+    color: #222;
+    background-color: #fff;
+}
+
+.real-nav div {
+    position: absolute;
+    z-index: 40;
+    top: 50%;
+    padding: 1rem;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+
+.real-nav div h3 {
+    word-break: keep-all;
+}
+
+.real-nav .prev {
+    left: 0;
+}
+
+.real-nav .prev div {
+    left: 0;
+    padding-left: 6rem;
+    -webkit-transform: translateY(-50%) translateX(-100%);
+    transform: translateY(-50%) translateX(-100%);
+}
+
+.real-nav .prev:hover .real-nav-icon {
+    padding-left: .5rem;
+}
+
+.real-nav .next {
+    right: 0;
+}
+
+.real-nav .next div {
+    right: 0;
+    padding-right: 6rem;
+    -webkit-transform: translateY(-50%) translateX(100%);
+    transform: translateY(-50%) translateX(100%);
+}
+
+.real-nav .next div h3 {
+    text-align: right;
+}
+
+.real-nav .next:hover .real-nav-icon {
+    padding-right: .5rem;
+}
+
+.real-nav .back {
+    left: calc(50% - (5.4rem / 2));
+}
+
+.real-nav .back div {
+    z-index: 100;
+    top: 120%;
+    left: calc(50% - 75px);
+    width: 150px;
+}
+
+.real-nav .back div h3 {
+    text-align: center;
+}
+
+.real-nav .back:hover .real-nav-icon {
+    padding-top: 0;
+}
+
+.real-nav .back:hover div {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.real-infos {
+    position: relative;
+    z-index: 10;
+    padding: 6rem 6rem 12rem;
+}
+
+.real-infos header h1 {
+    margin-top: 0;
+}
+
+.real-infos header .tags {
+    color: #737373;
+}
+
+.real-infos-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.real-infos-container .col-right .btn sup {
+    margin-left: .7rem;
+}
+
+.real-infos-container .col-right .project-details {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+
+.real-creas {
+    z-index: 2;
+    overflow: hidden;
+    min-height: 1000px;
+    padding: 6rem;
+    background: #000;
+}
+
+.real-creas .border-top {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+}
+
+.real-creas .border-btm {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+}
+
+.real-creas .real-pic {
+    position: relative;
+    margin-top: 80px;
+}
+
+.real-creas .real-pic img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.real-creas .real-pic .desktop-site {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 3px 3px 0 0;
+}
+
+.real-creas .real-pic .mobile-site {
+    position: absolute;
+    top: 250px;
+    right: 7%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 3px 3px 0 0;
+}
+
+.real-creas .real-pic:first-child {
+    margin-top: 0;
+}
+
+.real-client {
+    position: relative;
+    z-index: 10;
+    padding: 8rem 6rem;
+    text-align: center;
+    background-color: #ffe000;
+}
+
+.real-client h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.real-client p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.real-client p .client-name,
+.real-client p .client-job {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.2;
+    display: block;
+}
+
+.real-client p .client-name {
+    margin-top: 3rem;
+}
+
+.real-client p .client-job {
+    font-size: 80%;
+}
+
+.zone-contact {
+    position: relative;
+    z-index: 10;
+    padding: 6rem;
+}
+
+.zone-contact .zone-contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.zone-contact aside {
+    max-width: 350px;
+    margin-right: 130px;
+}
+
+.zone-contact aside a,
+.zone-contact aside p {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.zone-contact aside p {
+    margin: 0 0 4rem;
+}
+
+.zone-contact aside a {
+    border: none;
+    background-color: #ffe000;
+}
+
+.zone-contact .contact-form {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.zone-contact .contact-form .form-item {
+    margin: 0 0 4rem;
+}
+
+.zone-contact .contact-form .field {
+    display: inline-block;
+    width: 47%;
+}
+
+.zone-contact .contact-form .field-name {
+    margin-right: 5%;
+}
+
+.zone-contact .contact-form input,
+.zone-contact .contact-form textarea {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.zone-contact .contact-form input[type='text'] {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #000;
+}
+
+.zone-contact .contact-form textarea {
+    width: 100%;
+    width: 100%;
+    padding: 2rem;
+    word-wrap: break-word;
+    border: 3px solid #000;
+}
+
+.zone-contact .contact-form .send {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+}
+
+footer p {
+    font-size: 1.0rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+@media (min-width: 1440px) {
+    .big-screen-bloc,
+    .home-portfolio header,
+    .list-real,
+    .real-nav,
+    .real-infos header,
+    .real-infos-container,
+    .zone-contact h1,
+    .zone-contact .zone-contact-content {
+        max-width: 1320px;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .list-real .real-bloc {
+        width: 33%;
+    }
+
+    .list-real figcaption h2 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .zone-contact aside {
+        max-width: 28rem;
+        margin: 0 6rem 0 0;
+    }
+
+    .zone-contact .contact-form .field-name {
+        margin-right: 4%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 4.8rem;
+    }
+
+    .home-portfolio {
+        padding: 4rem;
+    }
+
+    .real-nav {
+        height: 55px;
+    }
+
+    .real-nav .real-nav-icon {
+        font-size: 2.8rem;
+    }
+
+    .real-nav div h3 {
+        font-size: 2rem;
+        letter-spacing: -.3px;
+    }
+
+    .real-infos-container .col-left {
+        width: 60%;
+    }
+
+    .real-infos-container .col-right {
+        width: 30%;
+    }
+
+    .list-real .real-bloc {
+        width: 50%;
+    }
+
+    .real-nav {
+        margin: 2rem 4rem 2rem;
+    }
+
+    .real-infos,
+    .real-creas,
+    .real-client {
+        padding: 6rem 4rem;
+    }
+
+    .zone-contact {
+        padding: 4rem;
+    }
+
+    .zone-contact aside {
+        max-width: 28rem;
+        margin: 0 6rem 0 0;
+    }
+
+    .zone-contact .contact-form .field {
+        width: 100%;
+    }
+
+    .zone-contact .contact-form .field-name {
+        margin-right: 0;
+    }
+
+    .zone-contact .contact-form textarea {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 1.6rem;
+    }
+
+    .home-about h1 {
+        height: 76px;
+        margin: 0 0 4rem;
+    }
+
+    .home-about p {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .home-portfolio header {
+        margin-bottom: 3rem;
+    }
+
+    .real-nav {
+        height: 50px;
+        margin: 2rem 4rem 2rem;
+    }
+
+    .real-nav .real-nav-icon {
+        font-size: 2.8rem;
+        padding: 1rem;
+    }
+
+    .real-nav a div {
+        position: absolute !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        border: 0 !important;
+    }
+
+    .real-nav a:hover div {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .real-nav .back {
+        left: calc(50% - (4.8rem / 2));
+    }
+
+    .real-nav .back:hover .real-nav-icon {
+        padding-top: 1.5rem;
+    }
+
+    .real-infos-container {
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+
+    .real-infos-container .col-left {
+        width: 100%;
+    }
+
+    .real-infos-container .col-right {
+        width: 100%;
+        margin-bottom: 2rem;
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+
+    .real-infos,
+    .real-creas,
+    .real-client {
+        padding: 6rem 4rem;
+    }
+
+    .real-creas .real-pic {
+        margin-top: 4rem;
+    }
+
+    .zone-contact .zone-contact-content {
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+
+    .zone-contact aside {
+        max-width: none;
+        margin: 0 0 4rem;
+    }
+
+    .zone-contact aside p {
+        margin: 0 0 2rem;
+    }
+
+    .zone-contact aside p,
+    .zone-contact aside a {
+        font-weight: 400;
+    }
+
+    .zone-contact .contact-form .form-item {
+        margin: 0 0 2rem;
+    }
+
+    .zone-contact .contact-form .field {
+        width: 100%;
+    }
+
+    .zone-contact .contact-form .field-name {
+        margin-right: 0;
+    }
+
+    .zone-contact .contact-form input,
+    .zone-contact .contact-form textarea {
+        font-weight: 400;
+    }
+
+    .zone-contact .contact-form textarea {
+        padding: 1rem;
+    }
+
+    .zone-contact .contact-form .send {
+        padding: .7rem 1.5rem;
+    }
+}
+
+@media (min-width: 545px) and (max-width: 768px) {
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    .home-about {
+        padding: 6rem 6rem 8rem;
+    }
+
+    .home-about p {
+        max-width: 600px;
+    }
+
+    .home-portfolio {
+        padding: 4rem;
+    }
+
+    .home-portfolio header p {
+        font-size: 2rem;
+    }
+
+    .list-real .real-bloc {
+        width: 50%;
+    }
+
+    .zone-contact {
+        padding: 4rem;
+    }
+
+    .zone-contact aside p,
+    .zone-contact aside a {
+        font-size: 2rem;
+    }
+
+    .zone-contact .contact-form input,
+    .zone-contact .contact-form textarea {
+        font-size: 2rem;
+    }
+
+    .zone-contact .contact-form .send {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    figcaption {
+        padding: 2rem;
+    }
+
+    figcaption h2,
+    figcaption p,
+    figcaption a {
+        color: #fff;
+    }
+
+    figcaption a {
+        font-size: 1.5rem;
+        border-color: #fff;
+    }
+
+    figcaption h2 {
+        font-size: 2.4rem;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        -ms-hyphens: auto;
+    }
+
+    .list-real .real-bloc .tags {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 544px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    .home-about {
+        padding: 6rem 4rem 6rem;
+    }
+
+    .home-about h1 {
+        height: 76px;
+        margin: 0 0 4rem;
+    }
+
+    .home-about p {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .home-portfolio {
+        padding: 2rem;
+    }
+
+    .home-portfolio header p {
+        font-size: 1.8rem;
+    }
+
+    .real-nav {
+        margin: 2rem;
+    }
+
+    .real-infos,
+    .real-creas,
+    .real-client {
+        padding: 4rem 2rem;
+    }
+
+    .list-real .real-bloc {
+        width: 100%;
+    }
+
+    .zone-contact {
+        padding: 2rem;
+    }
+
+    .zone-contact aside p,
+    .zone-contact aside a {
+        font-size: 1.8rem;
+    }
+
+    .zone-contact .contact-form input,
+    .zone-contact .contact-form textarea {
+        font-size: 1.8rem;
+    }
+
+    .zone-contact .contact-form .send {
+        font-size: 1.6rem;
+    }
+}

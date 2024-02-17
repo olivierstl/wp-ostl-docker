@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?je7wce');
+  src:  url('fonts/icomoon.eot?je7wce#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?je7wce') format('truetype'),
+    url('fonts/icomoon.woff?je7wce') format('woff'),
+    url('fonts/icomoon.svg?je7wce#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icons_menu:before {
+  content: "\e908";
+}
+.icon-icons_contact:before {
+  content: "\e900";
+}
+.icon-icons_infos:before {
+  content: "\e901";
+}
+.icon-icons_ext_big_ostell-copie:before {
+  content: "\e902";
+}
+.icon-icons_ext:before {
+  content: "\e903";
+}
+.icon-icons_back:before {
+  content: "\e904";
+}
+.icon-icons_left:before {
+  content: "\e905";
+}
+.icon-icons_ostell:before {
+  content: "\e906";
+}
+.icon-icons_right:before {
+  content: "\e907";
+}
+

@@ -1,0 +1,4 @@
+.env
+wordpress/wp-content/uploads
+wordpress/wp-content/themes/*
+!*wordpress/wp-content/themes/ostl
