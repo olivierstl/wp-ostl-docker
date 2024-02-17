@@ -4,7 +4,7 @@ services:
       - database
     image: wordpress:latest
     ports:
-      - 80:80
+      - 86:80
     restart: always
     environment:
       WORDPRESS_DB_HOST: database
@@ -39,7 +39,7 @@ services:
       - database
     image: phpmyadmin/phpmyadmin:latest
     ports:
-      - '8080:80'
+      - '8086:80'
     restart: always
     environment:
       PMA_HOST: '${MYSQL_HOST}'
