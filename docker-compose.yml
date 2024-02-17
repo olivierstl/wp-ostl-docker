@@ -43,8 +43,8 @@ services:
     restart: always
     environment:
       PMA_HOST: '${MYSQL_HOST}'
-      PMA_USER: root #'${MYSQL_USER}'
-      PMA_PASSWORD: '${MYSQL_ROOT_PASSWORD}' #'${MYSQL_PASSWORD}'
+      # PMA_USER: root #'${MYSQL_USER}'
+      # PMA_PASSWORD: '${MYSQL_ROOT_PASSWORD}' #'${MYSQL_PASSWORD}'
 
 networks:
   default:
