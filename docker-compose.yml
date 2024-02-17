@@ -46,5 +46,10 @@ services:
       PMA_USER: root #'${MYSQL_USER}'
       PMA_PASSWORD: '${MYSQL_ROOT_PASSWORD}' #'${MYSQL_PASSWORD}'
 
+networks:
+  default:
+    name: nginx-proxy
+    external: true
+
 volumes:
   db_data:
