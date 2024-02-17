@@ -26,8 +26,8 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     expose:
-      - 3306
-      - 33060
+      - 3307
+      - 33070
     environment:
       MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}' # somewordpress
       MYSQL_DATABASE: '${MYSQL_DATABASE}' #wordpress
