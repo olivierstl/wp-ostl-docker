@@ -10,7 +10,7 @@
             Bonjour, je suis Olivier et ceci est mon portfolio vieillissant.
           </p>
           <p>
-            Pendant plus de 10 ans, j'ai eu l'occasion de travailler dans les domaines du design et de la conception, l'intégration, la mise en place de sites WordPress puis en tant que développeur <span lang="EN">front-end</span> pendant plus de 5ans. Désormais acteur de l'accessibilité numérique chez <a href="https://ideance.net/fr/" class="text-link">Ideance</a>, mon bagage me d'être un interlocuteur de choix au sein des projets web auxquels je participe .
+            Pendant plus de 10 ans, j'ai eu l'occasion de travailler dans les domaines du design et de la conception, de l'intégration, de la mise en place de sites WordPress puis en tant que développeur <span lang="EN">front-end</span> pendant plus de 5ans. Désormais consultant en accessibilité numérique chez <a href="https://ideance.net/fr/" class="text-link">Ideance</a>, mon bagage me permet d'être un interlocuteur de choix au sein des projets auxquels je participe.
           </p>
           <p>
             Passionné des standards <abbr lang="EN" title="HyperText Markup Language">HTML</abbr>, <abbr lang="EN" title="Cascading Style Sheets">CSS</abbr> et <abbr lang="EN" title="JavaScript">JS</abbr>, mais aussi de
