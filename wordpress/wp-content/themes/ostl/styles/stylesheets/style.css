@@ -474,7 +474,7 @@ a {
 @font-face {
     font-family: 'icomoon';
     font-weight: normal;
-    font-style: normal; 
+    font-style: normal;
 
     src: url('../../_font/icomoon.eot?m936a9');
     src: url('../../_font/icomoon.eot?m936a9#iefix') format('embedded-opentype'), url('../../_font/icomoon.ttf?m936a9') format('truetype'), url('../../_font/icomoon.woff?m936a9') format('woff'), url('../../_font/icomoon.svg?m936a9#icomoon') format('svg');
@@ -1148,11 +1148,16 @@ body {
 }
 
 .home-about p {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 300;
     line-height: 1.5;
     max-width: 700px;
     margin: 0 auto;
+}
+
+
+.home-about p + p {
+  margin-block-start: 2.4rem;
 }
 
 .home-about .text-link {
@@ -1165,7 +1170,7 @@ body {
 }
 
 .home-portfolio header p,
-.home-portfolio header h1 {
+.home-portfolio header h2 {
     color: #ffe000;
 }
 
